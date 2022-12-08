@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6129aa88-6357-465d-a4b7-0d44e2351643" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/StringUtilTest.java" afterDir="false" />
+    <list default="true" id="6129aa88-6357-465d-a4b7-0d44e2351643" name="Changes" comment="[add] test Java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/player/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/player/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/PasswordUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/player/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/PasswordUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/StringUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/StringUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,28 +54,19 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.platzi.javaTests.player" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.platzi.javaTests.player" />
       <recent name="com.platzi.javaTests.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringUtilTest.testRepeat">
-    <configuration name="StringUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.StringUtilTest" />
-      <module name="JavaTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PlayerTest">
+    <configuration name="PasswordUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +75,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.platzi.javaTests.util" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.StringUtilTest" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.PasswordUtilTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilTest.testRepeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordUtilTest.weakWhenHasLettersAndNumbersAndSymbols" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +90,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.platzi.javaTests.util" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.StringUtilTest" />
-      <option name="METHOD_NAME" value="testRepeat" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.PasswordUtilTest" />
+      <option name="METHOD_NAME" value="weakWhenHasLettersAndNumbersAndSymbols" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordUtilTest.weakWhenHasOnlyLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platzi.javaTests.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.util" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.PasswordUtilTest" />
+      <option name="METHOD_NAME" value="weakWhenHasOnlyLetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platzi.javaTests.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.player" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.player.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.loosesWhenDiceNumberIsTooLow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platzi.javaTests.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.player" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.player.PlayerTest" />
+      <option name="METHOD_NAME" value="loosesWhenDiceNumberIsTooLow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,9 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringUtilTest.testRepeat" />
-        <item itemvalue="JUnit.StringUtilTest" />
-        <item itemvalue="Application.StringUtilTest" />
+        <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="JUnit.PlayerTest.loosesWhenDiceNumberIsTooLow" />
+        <item itemvalue="JUnit.PasswordUtilTest" />
+        <item itemvalue="JUnit.PasswordUtilTest.weakWhenHasLettersAndNumbersAndSymbols" />
+        <item itemvalue="JUnit.PasswordUtilTest.weakWhenHasOnlyLetters" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +163,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670301889566</updated>
     </task>
+    <task id="LOCAL-00001" summary="[add] test Java">
+      <created>1670304073526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670304073526</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,5 +183,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[add] test Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] test Java" />
   </component>
 </project>

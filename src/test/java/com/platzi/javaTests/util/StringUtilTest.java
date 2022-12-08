@@ -8,10 +8,20 @@ import static org.junit.Assert.*;
 public class StringUtilTest {
 
     @Test
-    public  void testRepeat() {
+    public  void repeatStringCero() {
+        assertEquals("",StringUtil.repeat("Hola",0));
+    }
 
-        assertEquals("HolaHolaHola",StringUtil.repeat("Hola",2));
-
-        System.out.println("result = " + StringUtil.repeat("Hola",2));
+    @Test
+    public  void repeatStringOne() {
+        assertEquals("Hola",StringUtil.repeat("Hola",1));
+    }
+    @Test
+    public  void repeatStringTree() {
+        assertEquals("HolaHolaHola",StringUtil.repeat("Hola",3));
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public  void repeatStringNegative() {
+        StringUtil.repeat("Hola",-1);
     }
 }
