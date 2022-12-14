@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6129aa88-6357-465d-a4b7-0d44e2351643" name="Changes" comment="[add] test mockito">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/Payments/PaymentGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/Payments/PaymentProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/Payments/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/Payments/PaymentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/Payments/PaymentProcessorTest.java" afterDir="false" />
+    <list default="true" id="6129aa88-6357-465d-a4b7-0d44e2351643" name="Changes" comment="[add] test payment">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/doscounts/PriceCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/DataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/doscounts/PriceCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/DataUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,16 +40,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.platzi.javaTests.Payments" />
@@ -60,96 +59,98 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.platzi.javaTests.doscounts" />
+      <recent name="com.platzi.javaTests.util" />
       <recent name="com.platzi.javaTests.Payments" />
       <recent name="com.platzi.javaTests.player" />
-      <recent name="com.platzi.javaTests.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PaymentProcessorTest">
-    <configuration name="PaumentProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PriceCalculatorTest">
+    <configuration name="DataUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.Payments.*" />
+          <option name="PATTERN" value="com.platzi.javaTests.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.platzi.javaTests.Payments" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.Payments.PaumentProcessorTest" />
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.util" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.DataUtilTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaumentProcessorTest.payment_is_correct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PriceCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.Payments.*" />
+          <option name="PATTERN" value="com.platzi.javaTests.doscounts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.platzi.javaTests.Payments" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.Payments.PaumentProcessorTest" />
-      <option name="METHOD_NAME" value="payment_is_correct" />
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.doscounts" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.doscounts.PriceCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriceCalculatorTest.aply_dicount_to_prices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platzi.javaTests.doscounts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.doscounts" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.doscounts.PriceCalculatorTest" />
+      <option name="METHOD_NAME" value="aply_dicount_to_prices" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PriceCalculatorTest.total_is_sum_of_prices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.Payments.*" />
+          <option name="PATTERN" value="com.platzi.javaTests.doscounts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.platzi.javaTests.Payments" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.Payments.PaymentProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentProcessorTest.payment_is_wrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.Payments.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.platzi.javaTests.Payments" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.Payments.PaymentProcessorTest" />
-      <option name="METHOD_NAME" value="payment_is_wrong" />
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.doscounts" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.doscounts.PriceCalculatorTest" />
+      <option name="METHOD_NAME" value="total_is_sum_of_prices" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PriceCalculatorTest.total_zero_where_there_are_price" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.player.*" />
+          <option name="PATTERN" value="com.platzi.javaTests.doscounts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.platzi.javaTests.player" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.player.PlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.doscounts" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.doscounts.PriceCalculatorTest" />
+      <option name="METHOD_NAME" value="total_zero_where_there_are_price" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PaymentProcessorTest" />
-        <item itemvalue="JUnit.PaymentProcessorTest.payment_is_wrong" />
-        <item itemvalue="JUnit.PaumentProcessorTest.payment_is_correct" />
-        <item itemvalue="JUnit.PaumentProcessorTest" />
-        <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="JUnit.PriceCalculatorTest" />
+        <item itemvalue="JUnit.PriceCalculatorTest.aply_dicount_to_prices" />
+        <item itemvalue="JUnit.PriceCalculatorTest.total_zero_where_there_are_price" />
+        <item itemvalue="JUnit.PriceCalculatorTest.total_is_sum_of_prices" />
+        <item itemvalue="JUnit.DataUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670532294477</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[add] test payment">
+      <created>1670544577180</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670544577180</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[add] test Java" />
     <MESSAGE value="[add] test mockito" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] test mockito" />
+    <MESSAGE value="[add] test payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] test payment" />
   </component>
 </project>
