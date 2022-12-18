@@ -15,7 +15,6 @@ public class PaymentProcessorTest {
     public  void setup(){
         paymentGateway = Mockito.mock(PaymentGateway.class);
         paymentProcessor =  new PaymentProcessor(paymentGateway);
-
     }
 
     @Test

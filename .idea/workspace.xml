@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6129aa88-6357-465d-a4b7-0d44e2351643" name="Changes" comment="[add] test payment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/doscounts/PriceCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/DataUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/doscounts/PriceCalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/DataUtilTest.java" afterDir="false" />
+    <list default="true" id="6129aa88-6357-465d-a4b7-0d44e2351643" name="Changes" comment="[add] test calculator with TDD">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/platzi/javaTests/util/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/util/FizzBuzzTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/Payments/PaymentProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/platzi/javaTests/Payments/PaymentProcessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,14 +58,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.platzi.javaTests.doscounts" />
       <recent name="com.platzi.javaTests.util" />
+      <recent name="com.platzi.javaTests.doscounts" />
       <recent name="com.platzi.javaTests.Payments" />
       <recent name="com.platzi.javaTests.player" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriceCalculatorTest">
-    <configuration name="DataUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FizzBuzzTest">
+    <configuration name="FizzBuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
         <pattern>
@@ -75,8 +74,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.platzi.javaTests.util" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.DataUtilTest" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.FizzBuzzTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzBuzzTest.return_Fizz_if_result_is_multiplicate_by_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platzi.javaTests.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.platzi.javaTests.util" />
+      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.util.FizzBuzzTest" />
+      <option name="METHOD_NAME" value="return_Fizz_if_result_is_multiplicate_by_3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,22 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriceCalculatorTest.total_is_sum_of_prices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.platzi.javaTests.doscounts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.platzi.javaTests.doscounts" />
-      <option name="MAIN_CLASS_NAME" value="com.platzi.javaTests.doscounts.PriceCalculatorTest" />
-      <option name="METHOD_NAME" value="total_is_sum_of_prices" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PriceCalculatorTest.total_zero_where_there_are_price" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests" />
       <extension name="coverage">
@@ -146,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FizzBuzzTest" />
+        <item itemvalue="JUnit.FizzBuzzTest.return_Fizz_if_result_is_multiplicate_by_3" />
         <item itemvalue="JUnit.PriceCalculatorTest" />
         <item itemvalue="JUnit.PriceCalculatorTest.aply_dicount_to_prices" />
         <item itemvalue="JUnit.PriceCalculatorTest.total_zero_where_there_are_price" />
-        <item itemvalue="JUnit.PriceCalculatorTest.total_is_sum_of_prices" />
-        <item itemvalue="JUnit.DataUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -184,8 +183,26 @@
       <option name="project" value="LOCAL" />
       <updated>1670544577180</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[add] test calculator with TDD">
+      <created>1670984389154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670984389154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -202,6 +219,7 @@
     <MESSAGE value="[add] test Java" />
     <MESSAGE value="[add] test mockito" />
     <MESSAGE value="[add] test payment" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] test payment" />
+    <MESSAGE value="[add] test calculator with TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] test calculator with TDD" />
   </component>
 </project>
